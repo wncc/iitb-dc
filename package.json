@@ -1,7 +1,12 @@
 {
   "name": "iitb-dc",
+  "description": "IIT Bombay's Diaries Confessions Client",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "DevCom, IIT Bombay",
+    "email": "devcom@iitb.ac.in"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wncc/iitb-dc.git"
