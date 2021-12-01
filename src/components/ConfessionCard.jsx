@@ -1,17 +1,15 @@
-function ConfessionCard({confession}) {
-    return (
-        <div className="component relative pl-4 pr-4 pt-2 pb-6 min-h-32 md:min-h-56 leading-7 overflow-hidden rounded-xl bg-secondary space-y-5">
-            {/* Header */}
-            <div className="font-bold text-white pl-2 pr-2 justify-center w-20 rounded-full bg-gray-600 bg-opacity-50">
-                {confession._id}
-            </div>
+const ConfessionCard = ({ confession }) => {
+  return (
+    <div className="relative p-6 space-y-5 overflow-hidden leading-7 component min-h-32 md:min-h-56 rounded-xl bg-secondary">
+      {/* Header */}
+      <span className="flex justify-center w-20 font-semibold tracking-wider text-white bg-gray-900 bg-opacity-50 rounded-full">
+        {confession._id}
+      </span>
 
-            {/* Content */}
-            <div className="text-textColor">
-                {confession.content}
-            </div>
-        </div>
-    )
-}
+      {/* Content */}
+      <p className="text-textColor">{confession.content}</p>
+    </div>
+  );
+};
 
-export default ConfessionCard
+export default ConfessionCard;
