@@ -48,6 +48,7 @@ module.exports = {
     ],
     // ? react 17+ doesn't need this
     'react/react-in-jsx-scope': 'off',
+    'react/jsx-one-expression-per-line': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'import/order': [
       'error',
@@ -61,5 +62,13 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+  },
+
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
+    },
   },
 };

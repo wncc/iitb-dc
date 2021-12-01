@@ -1,7 +1,7 @@
-import { confessions } from "../../../data";
+import { confessions } from 'data';
 
 const confessionHandler = (req, res) => {
-  const id = req.query.id;
+  const { id } = req.query;
   const item = confessions.find((p) => p.id === id);
 
   return item

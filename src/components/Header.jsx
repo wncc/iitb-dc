@@ -1,5 +1,5 @@
-import { HiSearch } from "react-icons/hi";
-import { GiNewspaper } from "react-icons/gi";
+import { GiNewspaper } from 'react-icons/gi';
+import { HiSearch } from 'react-icons/hi';
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
           className="items-center ml-2 bg-transparent outline-none"
           type="text"
           placeholder="Search"
-        ></input>
+        />
       </div>
 
       {/* Right */}
