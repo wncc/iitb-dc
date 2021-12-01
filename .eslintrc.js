@@ -2,17 +2,13 @@ const warnInDevelopment =
   process.env.NODE_ENV === 'production' ? 'error' : 'warn';
 
 module.exports = {
-  plugins: ['prettier', 'promise'],
+  plugins: ['promise'],
 
   extends: [
-    // "plugin:prettier/recommended",
-    // "plugin:prettier/recommended",
-    // "plugin:promise/recommended",
-    // "plugin:react-hooks/recommended",
-    // "plugin:react/recommended",
     'next/core-web-vitals',
     'airbnb',
     'airbnb/hooks',
+    'plugin:promise/recommended',
   ],
 
   ignorePatterns: ['node_modules/*', 'public/*', 'build/*'],
@@ -53,15 +49,6 @@ module.exports = {
     // ? react 17+ doesn't need this
     'react/react-in-jsx-scope': 'off',
     'react-hooks/exhaustive-deps': 'warn',
-
-    // "import/extensions": [
-    //   warnInDevelopment,
-    //   "always",
-    //   {
-    //     js: "never",
-    //     jsx: "never",
-    //   },
-    // ],
     'import/order': [
       'error',
       {
@@ -75,22 +62,4 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
   },
-
-  // settings: {
-  //   'import/resolver': {
-  //     node: {
-  //       paths: ['src'],
-  //     },
-  //   },
-  // },
 };
-
-// extends: [
-//   "plugin:react-hooks/recommended",
-//   "plugin:react/recommended",
-//   "react-app",
-//   "react-app/jest",
-//   "plugin:promise/recommended",
-//   "airbnb",
-//   "prettier",
-// ],
