@@ -61,7 +61,7 @@ const Home = ({ confessions }) => {
           <Sidebar />
 
           {/* Feed */}
-          <div className="w-full mt-6 space-y-3">
+          <div className="w-full mt-6 space-y-3 overscroll-auto">
             {confessions?.map((conf) => {
               return (
                 <div key={conf.id}>
@@ -73,7 +73,6 @@ const Home = ({ confessions }) => {
 
           {/* Widgets */}
           <div className="flex-col w-64 space-y-3">
-            <Widget />
             <Widget />
           </div>
         </main>
